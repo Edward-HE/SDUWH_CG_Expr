@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_set">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>170</width>
+      <height>410</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>设置面板</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_lightEnable">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启用光照</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_light">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>150</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>光照模式</string>
+     </property>
+     <widget class="QCheckBox" name="checkBox_doubleFace">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>121</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>双面光照模式</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_infinete">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>131</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>无穷远光照模式</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_global">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>131</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全场环境光模式</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="guoupBox_lightColor">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>150</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>光源颜色</string>
+     </property>
+     <widget class="QFrame" name="frameColor_diffuse">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameColor_specular">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frameColor_ambient">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>50</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_diffuse">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>漫反射</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_specular">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>镜面反射</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ambient">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>80</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>环境光</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_material">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>物体材质</string>
+     </property>
+     <widget class="QComboBox" name="comboBox_material">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>默认值</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>红宝石</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>黄铜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>青铜</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>白银</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>祖母绿</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="widgetDraw" name="widget_draw" native="true">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>10</y>
+      <width>460</width>
+      <height>400</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>widgetDraw</class>
+   <extends>QWidget</extends>
+   <header>widgetdraw.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/directional.png</file>
+        <file>images/gravity.png</file>
+        <file>images/grid.png</file>
+        <file>images/guide.png</file>
+        <file>images/rotate.png</file>
+        <file>images/rubberband.png</file>
+        <file>images/ruler.png</file>
+        <file>images/scale.png</file>
+        <file>images/show.png</file>
+        <file>images/translate.png</file>
+    </qresource>
+</RCC>

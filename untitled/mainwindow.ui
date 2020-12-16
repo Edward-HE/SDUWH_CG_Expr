@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>935</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>861</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="textWidget" name="widget1" native="true"/>
+    <widget class="figureWidget" name="widget2" native="true"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>935</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_s">
+    <property name="title">
+     <string>演示(S)</string>
+    </property>
+    <addaction name="action_C"/>
+    <addaction name="action_B"/>
+    <addaction name="action_T"/>
+    <addaction name="action_S"/>
+    <addaction name="action_R"/>
+    <addaction name="action_G"/>
+    <addaction name="action_D"/>
+    <addaction name="action_I"/>
+    <addaction name="action_U"/>
+    <addaction name="action_L"/>
+   </widget>
+   <addaction name="menu_s"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_C"/>
+   <addaction name="action_B"/>
+   <addaction name="action_T"/>
+   <addaction name="action_S"/>
+   <addaction name="action_R"/>
+   <addaction name="action_G"/>
+   <addaction name="action_D"/>
+   <addaction name="action_I"/>
+   <addaction name="action_U"/>
+   <addaction name="action_L"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_C">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/show.png</normaloff>images/show.png</iconset>
+   </property>
+   <property name="text">
+    <string>坐标显示(&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/rubberband.png</normaloff>images/rubberband.png</iconset>
+   </property>
+   <property name="text">
+    <string>橡皮筋(&amp;B)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/translate.png</normaloff>images/translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>移动(&amp;T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/scale.png</normaloff>images/scale.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩放(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/rotate.png</normaloff>images/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>旋转(&amp;R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/gravity.png</normaloff>images/gravity.png</iconset>
+   </property>
+   <property name="text">
+    <string>引力场(&amp;G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/directional.png</normaloff>images/directional.png</iconset>
+   </property>
+   <property name="text">
+    <string>定向(&amp;D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_I">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/grid.png</normaloff>images/grid.png</iconset>
+   </property>
+   <property name="text">
+    <string>网格(&amp;I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/ruler.png</normaloff>images/ruler.png</iconset>
+   </property>
+   <property name="text">
+    <string>标尺(&amp;U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/guide.png</normaloff>images/guide.png</iconset>
+   </property>
+   <property name="text">
+    <string>引导线(&amp;L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>textWidget</class>
+   <extends>QWidget</extends>
+   <header>textwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>figureWidget</class>
+   <extends>QWidget</extends>
+   <header>figurewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
